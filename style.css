@@ -1,0 +1,366 @@
+/*Universal Styles */
+
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+list-style-type: none;
+
+
+}
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: rgb(252, 251, 249);
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: rgb(243, 134, 134);
+}
+a:hover {
+    font-size: 1.3rem;
+    color: rgb(241, 74, 74);
+    background-color: rgb(236, 227, 213);
+    border-bottom: 2px solid rgb(206, 7, 7);
+    padding: 10px;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top:0;
+    width: 80%;
+    height: 105px;
+    z-index: 10;
+    background-color:white;
+    border-bottom: 2px solid red;
+    margin-left: 142px;
+
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    flex:1;
+    align-items: center;
+    width: 100%;
+
+}
+.logo {
+    width: 200px;
+    height: 99px;
+}
+
+
+
+
+
+.main-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    
+
+}
+.main-nav  li {
+    padding: 25px;
+    font-size: 1.2rem;
+
+}
+/* Main*/
+main{
+    width:80%;
+    height: auto;
+    background-color:rgb(236, 234, 229);
+    position: relative;
+    top:107px;
+    margin:0 auto;
+    
+}
+.main-header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+.main-header-left{
+    margin:50px;
+
+}
+.main-header-right {
+    margin: 50px;
+    max-width: 100%;
+}
+h2 {
+
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align:left;
+}  
+ p{
+     font-family: Arial, Helvetica, sans-serif;
+     margin-top: 10px;
+     text-align: left;
+     padding: 10px;
+     
+ }     
+button{
+    margin: 40px;
+    background-color: rgb(240, 102, 102);
+    color: white;
+    padding: 10px;
+    border-radius: 5%;
+    border:1px solid rgb(190, 8, 8);
+    margin-left: 0;
+}
+button:hover{
+    padding: 15px;
+    background-color: rgb(216, 17, 17);
+    font-size: 0.9rem;
+}
+.main-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:100%;
+    height: auto;
+}
+.main-main-right{
+    min-width: 50%;
+    max-height: 59%;
+    background-color: rgb(241, 217, 241);
+}
+.main-main-right h1 {
+    text-align: center;
+    margin:20px;
+    color: rgb(243, 122, 122);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.4rem;
+
+}
+.main-main-right p{
+    color: #0e0a0b;
+    margin: 0 10% 0 10%;
+    font-family: Roboto;
+    font-size: 1.25em;
+    text-align: center;
+    justify-content: center;
+}
+.posts{
+    height: 100px;
+    color: rgb(168, 99, 233);
+    font-family: Roboto;
+    padding: 5% 0 2% 5%;
+    text-align: left;
+
+}
+.lowerpart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+figcaption {
+    display: block;
+    justify-content:center;
+}
+.border {
+    border-bottom: solid rgb(243, 122, 122);
+    padding: 15px;
+}
+.subscribe {
+    text-align: center;
+    width: 500px;
+    margin-left: 30%;
+    margin-top: 30px;
+}
+
+.subscribe p{
+    
+    font-size: 1.5rem;
+}
+form {
+    display: block;
+    margin-top: 0em;
+    margin-top: 25px;
+}
+input {
+    border: none;
+    max-width: 150%;
+    height: 30px;
+}
+.subscribe button{
+    width: 320px;
+    padding: 10px;
+    background-color:rgb(236, 234, 229); 
+    border:2px solid rgb(243, 122, 122);
+    color: black;
+    font-size: 1.5rem;
+    margin: 15px;
+}
+.subscribe h5{
+    font-size: 2rem;
+}
+.subscribe .sponsor{
+    color:rgb(236, 71, 71); 
+    padding: 45px;
+    
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #01294b;
+    color: #f4f1f2;
+    max-width: 80%;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 110px auto 0 ;
+}
+h6 {
+    font-family: Roboto;
+    font-size: 1em;
+}
+.footerp{
+    font-family: Roboto;
+    font-size: 1em;
+    color:rgb(243, 134, 134); 
+    margin-top: 10px;
+
+}
+.icons{
+    margin-top:40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.column button{
+    padding: 10px;
+    margin-left: 20px;
+    border: none;
+
+
+}
+
+/* media query */
+
+@media only screen and (min-width: 1000px) and (max-width: 1300px){
+    body{
+        font-size: 80%;
+    }
+       
+    header {
+      width: 100%;
+      margin-left: 0;
+      height: auto;
+    }
+    .main-nav {
+        font-size: 1.25em;
+    }
+    h2{
+        font-size: 2.2rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    .main-main-right h1 {
+        font-size: 2.5rem;
+    }
+    .posts{
+        font-size:2.3rem ;
+    }
+    .main-main-right p{
+        font-size: 1.35em;
+    }
+    .subscribe p{
+        font-size: 1.6rem;
+    }
+}    
+
+@media only screen and (min-width: 300px) and (max-width: 1000px){
+    body {
+        max-width: 100%;
+        font-size: 70%;
+        margin-left: 10px;
+        padding: 0px;
+    }
+    header {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+      }
+    .main-header{
+        display:flex;
+        flex-direction: column;
+    }
+    .main-main{
+        display: flex;
+        flex-direction: column;
+    }
+    .lowerpart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    p{
+        font-size:1.4rem ;
+    }
+    .main-header-right{
+        margin: 0;
+        width: 100%;
+    }
+    .main-main-right{
+        height: 400px;
+    }
+    .main-main-right p{
+        font-size: 1.6rem;
+        margin-top: 40px;
+    }
+    .main-main-right h1 {
+        font-size: 2.6rem;
+
+    }
+    .posts{
+        font-size:2rem ;
+    }
+    .main-main-right p{
+        font-size: 1.35em;
+    }
+    .subscribe p{
+        font-size: 1.6rem;
+    }
+    figcaption {
+        display: block;
+        justify-content:left;
+    }
+    footer {
+        font-size: 45%;
+        padding-left: 10px;
+    }
+    .column {
+        width: 50%;
+    }
+    button {
+        max-width: 70%;
+    }
+    #femail {
+        width: 80%;
+        height: 10%;
+    }
+}
